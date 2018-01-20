@@ -1,0 +1,39 @@
+.colorNav{
+	background-color: #F2B809;
+}
+
+#content {
+	background: url('../img/google_maps2.jpg') no-repeat white;
+}
+
+.form-inicial{
+	padding: 20px;
+	background-color: #F2B809;
+}
+
+.comprarContainer{
+	padding-top: 30px;
+}
+
+.preco{
+	color: #63db5f;
+}
+
+.prazo{
+	color: #8d8d8d;
+}
+
+.imagem{
+	width: 30%;
+	margin-top: 35px;
+	margin-left: 35%;
+	padding-bottom: 20px;
+}
+
+.barra{
+	width: 5px;
+	height: 100px;
+	background-color: #195883;
+	margin-left: -90px;
+	margin-top: 10px;
+}

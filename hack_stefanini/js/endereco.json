@@ -1,0 +1,46 @@
+[{
+		"nomeEmpresa": "Vivo",
+		"preco": "100.00",
+		"prazo": "10",
+		"larguraBanda": "25",
+		"classificacao": "3",
+		"pathLogo": "img/logo/vivo.png",
+		"nomeProduto": "Plano Vivo"
+	},
+	{
+		"nomeEmpresa": "Claro",
+		"preco": "200.00",
+		"prazo": "10",
+		"larguraBanda": "25",
+		"classificacao": "2",
+		"pathLogo": "img/logo/claro.png",
+		"nomeProduto": "Plano Claro"
+	},
+	{
+		"nomeEmpresa": "OI",
+		"preco": "100.00",
+		"prazo": "3",
+		"larguraBanda": "250",
+		"classificacao": "5",
+		"pathLogo": "img/logo/oi.png",
+		"nomeProduto": "SUPER OI"
+	},
+	{
+		"nomeEmpresa": "TIM",
+		"preco": "100.00",
+		"prazo": "100",
+		"larguraBanda": "250",
+		"classificacao": "5",
+		"pathLogo": "img/logo/tim.png",
+		"nomeProduto": "BLACK"
+	},
+	{
+		"nomeEmpresa": "OI",
+		"preco": "100.00",
+		"prazo": "1",
+		"larguraBanda": "250",
+		"classificacao": "5",
+		"pathLogo": "img/logo/oi.png",
+		"nomeProduto": "Plano OI VIP"
+	}
+]

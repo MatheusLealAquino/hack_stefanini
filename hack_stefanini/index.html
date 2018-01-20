@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>Home - Jah Internet</title>
+  </head>
+  <body id="content">
+
+    <div class="container align-self-center">
+      <div class="row">
+
+        <form class="form-inicial mx-auto" action="comparar.html" method="GET">
+          <label for="inputCepDiv">Informe seu CEP ou localização</label>
+          <div class="form-group" id="inputCepDiv">
+            <input type="text" id="inputCep" name="cep" placeholder="Informe seu CEP ou localização" />
+            <button type="button" class="btn btn-primary" onclick="preencherCep();"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+            <p><small><a href="#" data-toggle="modal" data-target="#exampleModal"> Esqueceu seu CEP ?</a></small> 
+          </div>
+
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço" disabled>
+          </div>
+          <div class="form-group">
+            <label for="numero">Número</label>
+            <input type="text" class="form-control" id="numero" name="numero" placeholder="Número">
+          </div>
+
+          <div class="form-group">
+            <select class="custom-select">
+              <option value="Residencial">Residencial</option>
+              <option value="Empresarial">Empresarial</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary float-right">Pesquisar</button>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Esqueceu seu CEP ?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <label for="buscaEndereco">Digite seu endereço</label>
+              <div class="row" id="buscaEndereco">
+                <div class="col">
+                  <input type="text" id="buscaEnderecoInput" placeholder="Digite seu endereço" class="form-control"/>
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-primary" onclick="buscaEndereco();">Buscar</button>
+                </div>
+              </div>
+            </div>
+            </p>
+
+            <div class="container-fluid">
+              <div class="form-group">
+                <select class="custom-select" id="selectRua" size="4"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" onclick="adicionarEndereco();" data-dismiss="modal">Achei!</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+
+
+  </body>
+</html>
