@@ -1,0 +1,164 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Super8Inovacao",
+    "version" : "1.0.0",
+    "description" : "Super8Inovacao"
+  },
+  "paths" : {
+    "/endereco" : {
+      "get" : {
+        "operationId" : "getEndereco",
+        "responses" : {
+          "400" : {
+            "description" : "bad request",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/requestEndereco"
+            }
+          },
+          "204" : {
+            "description" : "not content",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "500" : {
+            "description" : "server error",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve endereco",
+        "parameters" : [ {
+          "name" : "cep",
+          "in" : "query",
+          "type" : "string",
+          "description" : "numero do CEP"
+        }, {
+          "name" : "nomeRua",
+          "in" : "header",
+          "type" : "number",
+          "description" : "nome da rua"
+        }, {
+          "name" : "numero",
+          "in" : "query",
+          "type" : "string",
+          "description" : "numero da rua"
+        }, {
+          "name" : "complemento",
+          "in" : "query",
+          "type" : "number",
+          "description" : "complemento do endereco"
+        }, {
+          "name" : "cidade",
+          "in" : "query",
+          "type" : "string",
+          "description" : "cidade"
+        }, {
+          "name" : "estado",
+          "in" : "query",
+          "type" : "string",
+          "description" : "estado"
+        }, {
+          "name" : "tipoContrato",
+          "in" : "query",
+          "type" : "string",
+          "description" : "residencial ou empresarial"
+        } ]
+      },
+      "post" : {
+        "operationId" : "postEndereco",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          },
+          "201" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a endereco",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "put" : {
+        "operationId" : "putEndereco",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Update endereco",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "delete" : {
+        "operationId" : "deleteEndereco",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Remove from endereco"
+      }
+    }
+  },
+  "basePath" : "/super8inovacao/v1",
+  "definitions" : {
+    "requestEndereco" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "nomeEmpresa" : {
+            "type" : "string"
+          },
+          "preco" : {
+            "type" : "string"
+          },
+          "prazo" : {
+            "type" : "string"
+          },
+          "larguraBanda" : {
+            "type" : "string"
+          },
+          "classificacao" : {
+            "type" : "string"
+          },
+          "pathLogo" : {
+            "type" : "string"
+          },
+          "nomeProduto" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

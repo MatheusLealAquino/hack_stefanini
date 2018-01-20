@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .colorNav{
 	background-color: #F2B809;
 }
@@ -36,4 +37,8 @@
 	background-color: #195883;
 	margin-left: -90px;
 	margin-top: 10px;
+=======
+#content {
+	background: url('../img/google_maps2.jpg') no-repeat white;
+>>>>>>> e2a2b2aaf17f26b8a68d5d7855fcaee4731225b4
 }
